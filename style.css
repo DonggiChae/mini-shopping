@@ -9,10 +9,10 @@
 
   /* size */
   --base-space: 8px;
-  --size-button: 60px;
+  --size-button: 40px;
   --size-border: 4px;
   --size-thumbnail: 50px;
-  --font-size: 18px;
+  --font-size: 16px;
 
   /* annimation */
   --animation-duration: 300ms;
@@ -49,6 +49,7 @@ body {
 .buttons {
   display: flex;
   align-items: center;
+  padding: 4px;
 }
 
 .imgBtn {
@@ -58,7 +59,7 @@ body {
 
 .colorBtn {
   font-size: var(--font-size);
-  padding: calc(var(--base-space) * 2);
+  padding: calc(var(--base-space) * 1.5) var(--base-space);
   border-radius: var(--size-border);
 }
 
@@ -75,8 +76,8 @@ body {
 }
 
 .items {
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 90%;
   list-style: none;
   padding-left: 0;
   overflow-y: scroll;
@@ -88,11 +89,6 @@ body {
   align-items: center;
   padding: var(--base-space);
   margin-bottom: var(--base-space);
-}
-
-.item.invisible {
-  background-color: var(--color-white);
-  display: none;
 }
 
 .item__thumbnail {
